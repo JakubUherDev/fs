@@ -12,6 +12,10 @@ module.exports = {
     extend: {
       inset: {
         '100': '100%',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('../img/hero_bg.svg')",
+
       }
     },
     colors: {

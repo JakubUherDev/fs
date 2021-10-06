@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
 @tailwind base;
 
@@ -10,6 +11,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+}
+
 p {
   @apply text-white;
 }
@@ -20,7 +26,7 @@ p {
   @apply text-white bg-yellow-600 px-10 py-3 rounded-full;
 }
 .btn:hover {
-  @apply bg-white text-yellow-600;
+  @apply bg-white text-yellow-600 border-solid border border-orange-dark;
 }
 .sticky {
   @apply fixed bg-white shadow;
