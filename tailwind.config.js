@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('../img/hero_bg.svg')",
+        'car-painting': "url('../img/car-spraying/car_painting.jpeg')",
 
       }
     },

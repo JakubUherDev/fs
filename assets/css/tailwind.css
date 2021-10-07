@@ -725,6 +725,10 @@ video {
   width: 50%;
 }
 
+.w-4\/5{
+  width: 80%;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1380,6 +1384,10 @@ p {
 
   .sm\:mt-4{
     margin-top: 1rem;
+  }
+
+  .sm\:hidden{
+    display: none;
   }
 
   .sm\:w-1\/2{
