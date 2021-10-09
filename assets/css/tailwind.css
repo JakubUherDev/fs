@@ -620,10 +620,6 @@ video {
   left: 8rem;
 }
 
-.left-full{
-  left: 100%;
-}
-
 .z-20{
   z-index: 20;
 }
@@ -1586,7 +1582,7 @@ p {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card:active .flip-card-inner {
   transform: rotateY(180deg);
 }
 
