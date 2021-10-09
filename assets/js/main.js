@@ -118,14 +118,8 @@
                 items: 3,
             }
         },
-        // loop: true,
-        // swipeAngle: false,
-        // speed: 2000,
-        // autoplayTimeout: 18000,
-        // center: false,
-        // dots: false,
-        // prevButton: "#kt_team_slider_prev1",
-        // nextButton: "#kt_team_slider_next1"
+        prevButton: "#portfolio-carousel-left-button",
+        nextButton: "#portfolio-carousel-right-button"
     });
 
     //WOW Scroll Spy

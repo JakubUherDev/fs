@@ -212,4 +212,21 @@ p {
   transform: rotateY(180deg);
 }
 
+.tns-outer {
+  width: 80%;
+  margin: 0px auto;
+}
 
+
+.portfolio-carousel-icon-animation:hover {
+  @apply text-orange-dark animate-bounce
+}
+
+.cta-btn {
+  border-radius: 9999px;
+  @apply transition duration-500 ease-in-out bg-orange-dark text-white py-3 px-3
+}
+
+.cta-btn:hover {
+  @apply text-orange-dark transform -translate-y-1 scale-110 bg-white border border-solid border-orange-dark
+}

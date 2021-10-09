@@ -90,7 +90,7 @@
               <div class="hidden md:block md:mb-12 lg:mb-20 text-center  wow fadeInUp" data-wow-delay="0.8s">
                 <a href="tel:07940244730"
                    rel="nofollow"
-                   class="btn">Call Now</a>
+                   class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">Call Now</a>
               </div>
               <div class="text-center wow fadeInUp" data-wow-delay="1.6s">
                 <img class="img-fluid mx-auto sm:pt-0 md:pt-0 lg:pt-0 pb-4 w-full lg:w-9/12 fadeInUp" src="assets/img/hero_sm.svg" alt="">
@@ -107,14 +107,16 @@
       <div class="container">
          <img class="mx-auto w-4/5" src="assets/img/mobile-div-v1-xs.svg" />
           <div class="block pt-12 sm:hidden text-center wow fadeInUp" data-wow-delay="0.8s">
-          <a href="tel:07940244730"
-             rel="nofollow"
-             class="btn">Call Now</a>
+
+            <button class="cta-btn">
+              <a href="tel:07940244730" rel="nofollow">Call Now</a>
+            </button>
         </div>
       </div>
     </section>
     <!-- Mobile Divider End -->
 
+    <!-- Divider -->
     <hr class="mx-auto w-2/3 mt-16">
 
     <!-- Services Section Start -->
@@ -432,8 +434,12 @@
     <section class="carousel-area  py-32">
       <div class="container">
         <div class="flex">
-          <div class="w-full relative">
-            <div class="portfolio-carousel">
+          <div class="w-full relative flex">
+            <div id="portfolio-carousel-left-button" class="flex w-1/12 justify-end ">
+              <button><i class="portfolio-carousel-icon-animation lni lni-angle-double-left text-4xl text-orange-light"></i></button>
+            </div>
+
+            <div class="portfolio-carousel w-10/12">
               <div>
                 <img class="w-full" src="assets/img/car-spraying/wheel_sm.jpg" alt="">
                 <div class="text-center px-5 py-3">
@@ -471,7 +477,13 @@
                 </div>
               </div>
               </div>
+            <div id="portfolio-carousel-right-button" class="flex w-1/12">
+              <button><i class="portfolio-carousel-icon-animation left lni lni-angle-double-right text-4xl text-orange-light"></i></button>
             </div>
+            </div>
+
+
+
           </div>
         </div>
       </div>
@@ -583,7 +595,7 @@
             <div class="flex">
                 <div class="w-full">
                   <iframe
-                          class="w-1/2 float-left"
+                          class="w-full sm:w-1/2 float-left"
                           height="450px"
                           style="border:0"
                           loading="lazy"
@@ -591,7 +603,7 @@
                           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDOhHXdxT1DVfXHcGyCMl_mB1rzE6mH55Y
     &q=Turbo+Garage,London+UK">
                   </iframe>
-                  <div id="opening-hours" class="w-1/2 float-right">
+                  <div id="opening-hours" class="w-full sm:w-1/2 float-right">
 
 
 
@@ -617,55 +629,74 @@
 	  <!-- Footer Section Start -->
     <footer id="footer" class="bg-gray-800 pt-16">
       <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="mx-3 mb-8">
-              <div class="footer-logo mb-3">
-                <img src="assets/img/logox-white.svg" alt="">
+        <div class="flex flex-wrap relative">
+
+
+
+<!--          <div class="info-row flex w-full">-->
+
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="mx-3 mb-8">
+                <div class="footer-logo mb-3">
+                  <img src="assets/img/logox-white.svg" alt="">
+                </div>
+                <p class="text-gray-300">With a team of qualified car mechanics and technicians, you can be assured of a truly personal service with all aspects of repairs to your car.</p>
               </div>
-              <p class="text-gray-300">With a team of qualified car mechanics and technicians, you can be assured of a truly personal service with all aspects of repairs to your car.</p>
             </div>
-          </div>
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="mx-3 mb-8">
-              <h3 class="font-bold text-xl text-white mb-5">Garage</h3>
-              <ul>
-                <li><a href="#" class="footer-links">Home</a></li>
-                <li><a href="#services" class="footer-links">Services</a></li>
-                <li><a href="#feature" class="footer-links">Car Spraying</a></li>
-              </ul>
+
+
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="mx-3 mb-8">
+                <h3 class="font-bold text-xl text-white mb-5">Garage</h3>
+                <ul>
+                  <li><a href="#" class="footer-links">Home</a></li>
+                  <li><a href="#services" class="footer-links">Services</a></li>
+                  <li><a href="#feature" class="footer-links">Car Spraying</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="mx-3 mb-8">
-              <h3 class="font-bold text-xl text-white mb-5">About</h3>
-              <ul>
-                <li><a href="#contact" class="footer-links">Contact</a></li>
-                <li><a href="#team" class="footer-links">Our Specialities</a></li>
-                <li><a href="#testimonial" class="footer-links">Testimonials</a></li>
-              </ul>
+
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.6s">
+              <div class="mx-3 mb-8">
+                <h3 class="font-bold text-xl text-white mb-5">About</h3>
+                <ul>
+                  <li><a href="#contact" class="footer-links">Contact</a></li>
+                  <li><a href="#team" class="footer-links">Our Specialities</a></li>
+                  <li><a href="#testimonial" class="footer-links">Testimonials</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.8s">
-            <div class="mx-3 mb-8">
-              <h3 class="font-bold text-xl text-white mb-5">Find us on</h3>
-        
-              <ul class="social-icons flex justify-start">
-                <li class="mx-2">
-                  <a href="https://www.facebook.com/marcindurkacz"
-                    class="footer-icon hover:bg-yellow-500">
-                    <i class="lni lni-facebook-original" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li class="mx-2">
-                  <a href="#"
-                    class="footer-icon hover:bg-yellow-500">
-                    <i class="lni lni-instagram-original" aria-hidden="true"></i>
-                  </a>
-                </li>
-              </ul>
+
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.8s">
+              <div class="mx-3 mb-8">
+                <h3 class="font-bold text-xl text-white mb-5">Find us on</h3>
+
+                <ul class="social-icons flex justify-start">
+                  <li class="mx-2">
+                    <a href="https://www.facebook.com/marcindurkacz"
+                       class="footer-icon hover:bg-yellow-500">
+                      <i class="lni lni-facebook-original" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="mx-2">
+                    <a href="#"
+                       class="footer-icon hover:bg-yellow-500">
+                      <i class="lni lni-instagram-original" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
+
+            <img class="block sm:hidden absolute h-1/2 left-48 bottom-20 opacity-80" src="assets/img/worker-2.svg" alt="">
+
           </div>
+<!--          <div class="image-row flex w-full">-->
+<!--            <img src="assets/img/worker-2.svg" alt="">-->
+<!--          </div>-->
+
+
+
         </div>
       </div>     
     </footer> 
