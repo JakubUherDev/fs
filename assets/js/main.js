@@ -92,8 +92,10 @@
 
     mobileMenuButton.addEventListener('click', () => {
         sidebar.classList.toggle("-translate-x-full");
-        document.body.classList.toggle('fixed-position');
         sidebar.classList.toggle("h-full");
+        setTimeout(() => {
+            document.body.classList.toggle('fixed-position');
+        }, 310)
     })
 
     mobileCloseMenuButton.addEventListener('click', () => {
