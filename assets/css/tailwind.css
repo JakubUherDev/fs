@@ -616,8 +616,8 @@ video {
   left: 0px;
 }
 
-.left-48{
-  left: 12rem;
+.left-32{
+  left: 8rem;
 }
 
 .left-full{
@@ -806,15 +806,6 @@ video {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:-translate-y-1:hover{
-  --tw-translate-y: -0.25rem;
-}
-
-.hover\:scale-110:hover{
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
 }
 
 @-webkit-keyframes spin{
@@ -1219,16 +1210,8 @@ video {
   transition-duration: 300ms;
 }
 
-.duration-500{
-  transition-duration: 500ms;
-}
-
 .duration-1000{
   transition-duration: 1000ms;
-}
-
-.ease-in-out{
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -1614,7 +1597,7 @@ p {
 
 .tns-outer {
   width: 80%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .portfolio-carousel-icon-animation:hover {
@@ -1624,7 +1607,10 @@ p {
 }
 
 .cta-btn {
-  border-radius: 9999px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(221, 107, 32, 1);
   background-color: rgba(221, 107, 32, 1);
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1653,9 +1639,6 @@ p {
   --tw-translate-y: -0.25rem;
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(221, 107, 32, 1);
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   color: rgba(221, 107, 32, 1)
