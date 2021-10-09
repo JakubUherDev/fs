@@ -4,6 +4,7 @@
 
 
 
+
     //===== Preloader
 
     // window.onload = function () {
@@ -72,17 +73,36 @@
     let navbarToggler = document.querySelector(".navbar-toggler");
     var navbarCollapse = document.querySelector(".navbar-collapse");
 
+
     document.querySelectorAll(".page-scroll").forEach(e =>
         e.addEventListener("click", () => {
             navbarToggler.classList.remove("active");
             navbarCollapse.classList.remove('show')
         })
     );
-    navbarToggler.addEventListener('click', function () {
-        navbarToggler.classList.toggle("active");
-        navbarCollapse.classList.toggle('show')
+    // navbarToggler.addEventListener('click', function () {
+    //     navbarToggler.classList.toggle("active");
+    //     navbarCollapse.classList.toggle('show')
+    // })
+
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileCloseMenuButton = document.querySelector('.mobile-menu-close-button');
+    const sidebar = document.querySelector('.sidebar');
+    const navigation = document.querySelector('.navigation')
+
+    mobileMenuButton.addEventListener('click', () => {
+        sidebar.classList.toggle("-translate-x-full");
     })
 
+    mobileCloseMenuButton.addEventListener('click', () => {
+        sidebar.classList.toggle("-translate-x-full");
+    })
+
+    document.querySelectorAll('.mobile-only-sidebar-button').forEach(e => {
+        e.addEventListener('click', () => {
+            sidebar.classList.toggle("-translate-x-full");
+        })
+    })
 
     //======== tiny slider for testimonial
     // tns({
@@ -130,5 +150,4 @@
     wow.init();
 
 })();
-
 
