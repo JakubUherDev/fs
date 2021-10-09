@@ -10,13 +10,15 @@ module.exports = {
   },
   theme: {
     extend: {
+      fontFamily: {
+        'roboto': ['"Roboto Condensed"', 'sans-serif']
+      },
       inset: {
         '100': '100%',
       },
       backgroundImage: {
         'hero-pattern': "url('../img/hero_bg.svg')",
         'car-painting': "url('../img/car-spraying/car_painting.jpeg')",
-
       }
     },
     colors: {

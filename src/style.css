@@ -170,3 +170,46 @@ p {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
+
+.txt-shadow-black {
+  text-shadow: 3px 5px 2px #474747;
+}
+
+.contact-form-shadow-bg {
+  background: radial-gradient(#2e2626, #16121200);
+}
+
+.contact-form-shadow-bg-darker {
+  background: radial-gradient(black, #00000045);
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  display: flex;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+

@@ -612,12 +612,24 @@ video {
   left: 0px;
 }
 
+.left-full{
+  left: 100%;
+}
+
 .z-20{
   z-index: 20;
 }
 
 .z-30{
   z-index: 30;
+}
+
+.float-right{
+  float: right;
+}
+
+.float-left{
+  float: left;
 }
 
 .m-3{
@@ -743,6 +755,10 @@ video {
 
 .w-4\/5{
   width: 80%;
+}
+
+.w-1\/6{
+  width: 16.666667%;
 }
 
 .w-full{
@@ -963,12 +979,20 @@ video {
   --tw-gradient-to: rgba(221, 107, 32, 1);
 }
 
+.bg-cover{
+  background-size: cover;
+}
+
 .bg-bottom{
   background-position: bottom;
 }
 
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-2{
@@ -1015,6 +1039,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-4{
+  padding-top: 1rem;
+}
+
 .pt-12{
   padding-top: 3rem;
 }
@@ -1035,9 +1063,18 @@ video {
   text-align: center;
 }
 
+.font-roboto{
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg{
@@ -1096,14 +1133,13 @@ video {
   color: rgba(82, 82, 82, var(--tw-text-opacity));
 }
 
-.text-red-600{
-  --tw-text-opacity: 1;
-  color: rgba(225, 29, 72, var(--tw-text-opacity));
-}
-
 .hover\:text-blue-600:hover{
   --tw-text-opacity: 1;
   color: rgba(37, 99, 235, var(--tw-text-opacity));
+}
+
+.hover\:text-orange-light:hover{
+  color: rgba(246, 173, 85, 1);
 }
 
 *, ::before, ::after{
@@ -1491,6 +1527,46 @@ p {
   transform: rotateY(-180deg);
 }
 
+.txt-shadow-black {
+  text-shadow: 3px 5px 2px #474747;
+}
+
+.contact-form-shadow-bg {
+  background: radial-gradient(#2e2626, #16121200);
+}
+
+.contact-form-shadow-bg-darker {
+  background: radial-gradient(black, #00000045);
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  display: flex;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
 @media (min-width: 640px){
   .sm\:mt-1{
     margin-top: 0.25rem;
@@ -1592,6 +1668,11 @@ p {
     line-height: 1.5rem;
   }
 
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1686,3 +1767,5 @@ p {
     width: 33.333333%;
   }
 }
+
+

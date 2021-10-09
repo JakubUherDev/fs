@@ -101,12 +101,12 @@
         container: '.portfolio-carousel',
         items: 3,
         slideBy: 'page',
-        autoplay: false,
+        autoplay: true,
         mouseDrag: true,
         gutter: 30,
-        nav: true,
-        navPosition: 'bottom',
+        nav: false,
         controls: true,
+        autoplayButtonOutput: false,
         responsive: {
             0: {
                 items: 1,
@@ -117,7 +117,15 @@
             1024: {
                 items: 3,
             }
-        }
+        },
+        // loop: true,
+        // swipeAngle: false,
+        // speed: 2000,
+        // autoplayTimeout: 18000,
+        // center: false,
+        // dots: false,
+        // prevButton: "#kt_team_slider_prev1",
+        // nextButton: "#kt_team_slider_next1"
     });
 
     //WOW Scroll Spy

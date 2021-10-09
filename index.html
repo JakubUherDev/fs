@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/tailwind.css">
 
 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
 
   </head>
@@ -85,7 +85,7 @@
           <div class="flex justify-between">
             <div class="w-full text-center">
               <h2 class="mt-36 sm:mt-4 md:mt-4 sm:pt-5 md:pt-0 sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug text-white mb-4 wow fadeInUp " data-wow-delay="0.6s">Any Car, Any Repair
-                <br class="block"> We do them all, not only Turbo's
+                <br class="block"> We do them all, not only <span style="color: rgb(37, 71, 153)">Turbo's</span>
               </h2>
               <div class="hidden md:block md:mb-12 lg:mb-20 text-center  wow fadeInUp" data-wow-delay="0.8s">
                 <a href="tel:07940244730"
@@ -211,7 +211,7 @@
         <div class="flex flex-wrap items-center">
           <div class="w-full lg:w-1/2">
             <div class="mb-5 lg:mb-0">
-              <h2 class="text-center lg:text-left mb-12 section-heading-light wow fadeInDown " data-wow-delay="0.3s">Car Spraying</h2>
+              <h2 class="text-center lg:text-left mb-12 section-heading-light wow fadeInDown txt-shadow-black" data-wow-delay="0.3s">Car Spraying</h2>
               
               <div class="flex flex-wrap">
                 <div class="w-full sm:w-1/2 lg:w-1/2">
@@ -352,11 +352,14 @@
     </section>
     <!-- Team Section End -->
 
+
+<!--    -->
+
     <!-- Clients Section Start -->
     <div id="clients" class="py-16 bg-gradient-to-r from-orange-light via-yellow-500 to-orange-dark">
       <div class="container">
         <div class="text-center">
-          <h2 class="mb-12 section-heading-light text-red-600 wow fadeInDown" data-wow-delay="0.3s">Few Makes We Service</h2>
+          <h2 class="mb-12 section-heading-light font-roboto txt-shadow-black wow fadeInDown" data-wow-delay="0.3s">Just Few Makes We Service</h2>
         </div>
         <div class="flex flex-wrap justify-center">
           <div class="w-1/2 md:w-1/4 lg:w-1/4">
@@ -394,11 +397,31 @@
               <img class="client-logo" src="assets/img/clients/nissan.svg" alt="">
             </div>
           </div>
+          <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="1.2s">
+              <img class="client-logo" src="assets/img/clients/jaguar.svg" alt="">
+            </div>
+          </div>
+          <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="1.2s">
+              <img class="client-logo" src="assets/img/clients/suzuki.svg" alt="">
+            </div>
+          </div>
+          <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="1.2s">
+              <img class="client-logo" src="assets/img/clients/volvo.svg" alt="">
+            </div>
+          </div>
+          <div class="w-1/2 md:w-1/4 lg:w-1/4">
+            <div class="m-3 wow fadeInUp" data-wow-delay="1.2s">
+              <img class="client-logo" src="assets/img/clients/vauxhall.svg" alt="">
+            </div>
+          </div>
         </div>
       </div>
         <div class="container">
-          <div class="text-center">
-            <h5 class="mb-12 text-lg text-white wow fadeInDown" data-wow-delay="0.3s">We are a large Garage and MOT Test centre with Spray Boot and Body Workshop. <br> We are able to help with MOTs and repairs to all makes of Car or Van and Bikes/Scooters.</h5>
+          <div class="text-center font-roboto mt-4">
+            <h5 class="mb-12 text-base md:text-lg text-white txt-shadow-black wow fadeInDown" data-wow-delay="0.3s">We are a professional Garage and MOT Test centre with Spray Boot and Body Workshop. <br> We can help with MOTs and repairs to all makes of Cars or Van and Bikes/Scooters.</h5>
             <a class="btn" href="">Get A Free Quote</a>
           </div>
         </div>
@@ -456,14 +479,15 @@
     <!-- carousel-area Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="py-24 bg-gradient-to-r from-orange-dark via-yellow-500 to-orange-light">
+    <section id="contact" class="py-24 bg-hero-pattern bg-cover bg-no-repeat">
+
       <div class="container">
         <div class="text-center">
-          <h2 class="mb-12 text-4xl text-white font-bold tracking-wide wow fadeInDown" data-wow-delay="0.3s">Contact</h2>
+          <h2 class="mb-12 text-4xl text-white txt-shadow-black font-bold tracking-wide wow fadeInDown" data-wow-delay="0.3s">Contact</h2>
         </div>
 
         <div class="flex flex-wrap contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
-          <div class="w-full md:w-1/2">
+          <div class="w-full md:w-1/2 contact-form-shadow-bg pt-4">
             <div class="contact">
               <h2 class="uppercase font-bold text-xl text-white mb-5 ml-3">Contact Form</h2>
               <form id="contactForm" action="assets/contact.php">
@@ -497,37 +521,56 @@
               </form>
             </div>
           </div>
-          <div class="w-full md:w-1/2">
+          <div class="w-full md:w-1/2 contact-form-shadow-bg pt-4">
             <div class="ml-3 md:ml-12 wow fadeIn">
               <h2 class="uppercase font-bold sm:mt-1 text-xl text-white mb-5">Get In Touch</h2>
               <div>
-                <div class="flex flex-wrap mb-6 items-center">
-                  <div class="contact-icon bg-orange-dark">
-                    <i class="lni lni-map-marker"></i>
+                <div class="flip-card flex flex-wrap mb-6 items-center p-4 contact-form-shadow-bg-darker">
+                  <div class="flip-card-inner container">
+                    <div class="contact-icon bg-orange-dark">
+                      <i class="lni lni-map-marker"></i>
+                    </div>
+                    <p class="flip-card-front pl-3 text-white text-lg">
+                      Unit C, 491A Yeading Lane,<br>
+                      UB5 6LN Northolt, Slough,<br>
+                      United Kingdom</p>
+                    <p class="flip-card-back pl-3 text-white text-lg flip-card-back">
+                      <a href="https://goo.gl/maps/F2849wQ5kkygjyo2A" target="_blank" class="block hover:text-orange-light">Get Directions</a>
+                    </p>
+
                   </div>
-                  <p class="pl-3 text-white text-lg">
-                    Unit C, 491A Yeading Lane,<br>
-                    UB5 6LN Northolt, Slough,<br>
-                    United Kingdom</p>
                 </div>
-                <div class="flex flex-wrap mb-6 items-center">
-                  <div class="contact-icon bg-orange-dark">
-                    <i class="lni lni-envelope"></i>
+                <div class="flip-card flex flex-wrap mb-6 items-center p-4 contact-form-shadow-bg-darker">
+                  <div class="flip-card-inner container">
+                    <div class="contact-icon bg-orange-dark">
+                      <i class="lni lni-envelope"></i>
+                    </div>
+                    <p class="pl-3 text-white text-lg flip-card-front">
+                      <a href="mailto:theturbogarage@gmail.com" class="block">theturbogarage@gmail.com</a>
+                    </p>
+                    <p class="flip-card-back">
+                      <a href="mailto:theturbogarage@gmail.com" class="block hover:text-orange-light">Email us</a>
+                    </p>
                   </div>
-                  <p class="pl-3 text-white text-lg">
-                    <a href="mailto:theturbogarage@gmail.com" class="block">theturbogarage@gmail.com</a>
-                  </p>
                 </div>
-                <div class="flex flex-wrap mb-6 items-center">
-                  <div class="contact-icon bg-orange-dark">
-                    <i class="lni lni-phone-set"></i>
+                <div class="flip-card flex flex-wrap mb-6 items-center p-4 contact-form-shadow-bg-darker">
+                  <div class="flip-card-inner container">
+                    <div class="contact-icon bg-orange-dark">
+                      <i class="lni lni-phone-set"></i>
+                    </div>
+                    <p class="pl-3 text-white text-lg flip-card-front">
+                      <a href="tel:+447940244730" class="block">07940 244730</a>
+                    </p>
+                    <p class="pl-3 text-white text-lg flip-card-back">
+                      <a href="tel:+447940244730" class="block hover:text-orange-light">Call Now</a>
+                    </p>
                   </div>
-                  <p class="pl-3 text-white text-lg">
-                    <a href="tel:+447940244730" class="block">07940 244730</a>
-                  </p>
                 </div>
               </div>
             </div>
+<!--            <div class="absolute">-->
+<!--              <img class="hidden lg:block w-full relative left-full" src="assets/img/worker.svg" alt=""/>-->
+<!--            </div>-->
           </div>
         </div>
       </div> 
@@ -539,7 +582,32 @@
         <div class="mx-6 mb-6">
             <div class="flex">
                 <div class="w-full">
-                    <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
+                  <iframe
+                          class="w-1/2 float-left"
+                          height="450px"
+                          style="border:0"
+                          loading="lazy"
+                          allowfullscreen
+                          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDOhHXdxT1DVfXHcGyCMl_mB1rzE6mH55Y
+    &q=Turbo+Garage,London+UK">
+                  </iframe>
+                  <div id="opening-hours" class="w-1/2 float-right">
+
+
+
+                    <ul>
+                      <li>
+                        <div class="container">
+                          <div class="flex">
+                            <div class="day w-1/6">Sunday</div>
+                            <div class="hours w-1/6">Closed</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+<!--                    <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>-->
                 </div>
             </div>
         </div>
