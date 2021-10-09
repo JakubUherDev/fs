@@ -230,3 +230,7 @@ p {
 .cta-btn:hover {
   @apply text-orange-dark transform -translate-y-1 scale-110 bg-white
 }
+
+.fixed-position {
+  position: fixed;
+}

@@ -92,14 +92,19 @@
 
     mobileMenuButton.addEventListener('click', () => {
         sidebar.classList.toggle("-translate-x-full");
+        document.body.classList.toggle('fixed-position');
+        sidebar.classList.toggle("h-full");
     })
 
     mobileCloseMenuButton.addEventListener('click', () => {
+        document.body.classList.toggle('fixed-position');
         sidebar.classList.toggle("-translate-x-full");
+        sidebar.classList.toggle("h-full");
     })
 
     document.querySelectorAll('.mobile-only-sidebar-button').forEach(e => {
         e.addEventListener('click', () => {
+            document.body.classList.toggle('fixed-position');
             sidebar.classList.toggle("-translate-x-full");
         })
     })

@@ -1765,6 +1765,10 @@ p {
   color: rgba(221, 107, 32, 1)
 }
 
+.fixed-position {
+  position: fixed;
+}
+
 @media (min-width: 640px){
   .sm\:mt-1{
     margin-top: 0.25rem;
