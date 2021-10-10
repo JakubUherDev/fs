@@ -98,7 +98,7 @@ p {
 }
 
 .client-logo {
-  @apply opacity-50 duration-300;
+  @apply opacity-60 duration-300;
 }
 .client-logo:hover {
   @apply opacity-100;
