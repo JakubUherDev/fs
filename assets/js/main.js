@@ -154,31 +154,7 @@
     //   controls: false,
     // });
 
-    //======== tiny slider for portfolio
-    tns({
-        container: '.portfolio-carousel',
-        items: 3,
-        slideBy: 'page',
-        autoplay: true,
-        mouseDrag: true,
-        gutter: 30,
-        nav: false,
-        controls: true,
-        autoplayButtonOutput: false,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            765: {
-                items: 2,
-            },
-            1024: {
-                items: 3,
-            }
-        },
-        prevButton: "#portfolio-carousel-left-button",
-        nextButton: "#portfolio-carousel-right-button"
-    });
+
 
     //WOW Scroll Spy
     var wow = new WOW({

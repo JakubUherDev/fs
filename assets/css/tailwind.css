@@ -690,6 +690,16 @@ video {
   margin-right: auto;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-28{
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -843,6 +853,15 @@ video {
 
 .-translate-x-full{
   --tw-translate-x: -100%;
+}
+
+.hover\:-translate-y-1:hover{
+  --tw-translate-y: -0.25rem;
+}
+
+.hover\:scale-110:hover{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
 }
 
 @-webkit-keyframes spin{
@@ -1000,8 +1019,16 @@ video {
   border-color: rgba(64, 64, 64, var(--tw-border-opacity));
 }
 
+.border-orange-dark{
+  border-color: rgba(221, 107, 32, 1);
+}
+
 .hover\:border-orange-dark:hover{
   border-color: rgba(221, 107, 32, 1);
+}
+
+.bg-transparent{
+  background-color: transparent;
 }
 
 .bg-black{
@@ -1050,6 +1077,10 @@ video {
 .hover\:bg-yellow-500:hover{
   --tw-bg-opacity: 1;
   background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+}
+
+.hover\:bg-orange-dark:hover{
+  background-color: rgba(221, 107, 32, 1);
 }
 
 .bg-gradient-to-r{
@@ -1176,6 +1207,11 @@ video {
   text-align: center;
 }
 
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1211,8 +1247,17 @@ video {
   line-height: 1;
 }
 
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-extrabold{
+  font-weight: 800;
 }
 
 .uppercase{
@@ -1329,6 +1374,10 @@ video {
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
 }
 
 .duration-1000{
@@ -1776,6 +1825,14 @@ p {
   transition: 2s;
 }
 
+.message-404-gradient-text{
+  background: #F59E0B;
+  background: -webkit-repeating-radial-gradient(ellipse farthest-corner at top left, #F59E0B 0%, #DD6C20 50%, #DD6C20 51%, #F16F5C 71%, #F6290C 100%);
+  background: repeating-radial-gradient(ellipse farthest-corner at top left, #F59E0B 0%, #DD6C20 50%, #DD6C20 51%, #F16F5C 71%, #F6290C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (min-width: 640px){
   .sm\:mt-1{
     margin-top: 0.25rem;
@@ -1871,6 +1928,11 @@ p {
     padding-right: 5rem;
   }
 
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .md\:pt-0{
     padding-top: 0px;
   }
@@ -1892,6 +1954,11 @@ p {
 
   .md\:text-5xl{
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-9xl{
+    font-size: 8rem;
     line-height: 1;
   }
 }
@@ -1959,6 +2026,16 @@ p {
 
   .lg\:text-left{
     text-align: left;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-4xl{

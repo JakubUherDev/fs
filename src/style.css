@@ -239,3 +239,13 @@ p {
   transform: translateY(100%);
   transition: 2s;
 }
+
+
+.message-404-gradient-text{
+  background: #F59E0B;
+  background: -webkit-repeating-radial-gradient(ellipse farthest-corner at top left, #F59E0B 0%, #DD6C20 50%, #DD6C20 51%, #F16F5C 71%, #F6290C 100%);
+  background: -moz-repeating-radial-gradient(ellipse farthest-corner at top left, #F59E0B 0%, #DD6C20 50%, #DD6C20 51%, #F16F5C 71%, #F6290C 100%);
+  background: repeating-radial-gradient(ellipse farthest-corner at top left, #F59E0B 0%, #DD6C20 50%, #DD6C20 51%, #F16F5C 71%, #F6290C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
