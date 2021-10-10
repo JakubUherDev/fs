@@ -234,3 +234,8 @@ p {
 .fixed-position {
   position: fixed;
 }
+
+.hide-cookies-consent-message {
+  transform: translateY(100%);
+  transition: 2s;
+}

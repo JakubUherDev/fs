@@ -29,6 +29,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ7K1VJBS2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GJ7K1VJBS2');
+    </script>
 
   </head>
   <body>
@@ -774,7 +783,30 @@
       <div class="loader" id="loader-1"></div>
     </div> -->
     <!-- End Preloader -->
-    
+
+
+
+
+    <div class="cookie-consent-banner fixed bottom-0 left-0 z-50 box-border w-full bg-orange-dark flex justify-center">
+      <div class="mx-auto w-full md:w-2/3 mb-4 p-4 flex-col">
+        <div>
+          <div class="cookie-consent-banner__header text-base text-white font-roboto">THIS WEBSITE USES COOKIES</div>
+          <div class="py-4 cookie-consent-banner__description text-white">We use cookies to personalise content and ads as well as to provide social media features and to analyse our traffic. We don't handle any sensitive data, website is using Google analytics to power our campaigns. You consent to our cookies if you continue to use our website.</div>
+        </div>
+
+        <div class="cookie-consent-banner__actions flex">
+          <a href="#" class="cookie-consent-banner-action-btn bg-white hover:bg-green-400 text-orange-dark hover:text-white hover:border hover:border-orange-dark py-2 px-4 rounded">
+            OK
+          </a>
+          <span style="width: 10px"></span>
+          <a href="#" class="cookie-consent-banner-action-btn bg-white hover:bg-red text-orange-dark hover:text-red-800 py-2 px-4 rounded">
+            Decline
+          </a>
+        </div>
+      </div>
+    </div>
+
+
     <!-- All js Here -->
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/tiny-slider.js"></script>

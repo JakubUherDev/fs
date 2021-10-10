@@ -7,10 +7,24 @@
 
     //===== Preloader
 
+    window.onload = () => {
+        const date = localStorage.getItem('expiryDate')
+        const today = new Date()
+
+        console.log(date)
+        console.log(today)
+
+        if(date) {
+            if (date !== today) {
+                document.querySelector('.cookie-consent-banner ').classList.add('hide-cookies-consent-message')
+            }
+        }
+    }
+
     // window.onload = function () {
     //   window.setTimeout(fadeout, 500);
     // }
-
+    //
     // function fadeout() {
     //   document.querySelector('#preloader').style.opacity = '0';
     //   document.querySelector('#preloader').style.display = 'none';
@@ -88,7 +102,9 @@
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
     const mobileCloseMenuButton = document.querySelector('.mobile-menu-close-button');
     const sidebar = document.querySelector('.sidebar');
-    const navigation = document.querySelector('.navigation')
+    const navigation = document.querySelector('.navigation');
+    const cookieBar = document.querySelector('.cookie-consent-banner');
+
 
     mobileMenuButton.addEventListener('click', () => {
         sidebar.classList.toggle("-translate-x-full");
@@ -110,6 +126,17 @@
             sidebar.classList.toggle("-translate-x-full");
         })
     })
+
+    document.querySelectorAll('.cookie-consent-banner-action-btn').forEach(e => {
+      e.addEventListener('click', () => {
+          cookieBar.classList.toggle('hide-cookies-consent-message')
+          console.log('Ive set the cookie')
+          localStorage.setItem('expiryDate', new Date(new Date().setFullYear(new Date().getFullYear() + 1)))
+      });
+    });
+
+
+
 
     //======== tiny slider for testimonial
     // tns({
