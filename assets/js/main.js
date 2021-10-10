@@ -6,8 +6,12 @@
 
 
     //===== Preloader
+    //
+    // window.onload = () => {
+    // }
 
-    window.onload = () => {
+    window.addEventListener("load", function(){
+        // ....
         const date = localStorage.getItem('expiryDate')
         const today = new Date()
 
@@ -19,7 +23,7 @@
                 document.querySelector('.cookie-consent-banner ').classList.add('hide-cookies-consent-message')
             }
         }
-    }
+    });
 
     // window.onload = function () {
     //   window.setTimeout(fadeout, 500);
