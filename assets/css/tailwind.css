@@ -824,10 +824,6 @@ video {
   width: 8.333333%;
 }
 
-.w-5\/12{
-  width: 41.666667%;
-}
-
 .w-10\/12{
   width: 83.333333%;
 }
@@ -1641,7 +1637,7 @@ p {
 }
 
 .client-logo {
-  opacity: 0.6;
+  opacity: 0.8;
   transition-duration: 300ms;
 }
 
@@ -1981,6 +1977,10 @@ p {
 
   .md\:w-1\/4{
     width: 25%;
+  }
+
+  .md\:w-5\/12{
+    width: 41.666667%;
   }
 
   .md\:w-full{
