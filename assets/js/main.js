@@ -2,9 +2,6 @@
 
     "use strict";
 
-
-
-
     //===== Preloader
     //
     // window.onload = () => {
@@ -35,18 +32,18 @@
     // }
 
 
-    /*=====================================
-    Sticky
-    ======================================= */
-    window.onscroll = function () {
-        // show or hide the back-top-top button
-        var backToTop = document.querySelector(".back-to-top");
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            backToTop.style.display = "flex";
-        } else {
-            backToTop.style.display = "none";
-        }
-    };
+    // /*=====================================
+    // Sticky
+    // ======================================= */
+    // window.onscroll = function () {
+    //     // show or hide the back-top-top button
+    //     var backToTop = document.querySelector(".back-to-top");
+    //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    //         backToTop.style.display = "flex";
+    //     } else {
+    //         backToTop.style.display = "none";
+    //     }
+    // };
 
     // Get the navbar
 
