@@ -25,8 +25,7 @@
     <meta name="google-site-verification" content="twEKHK0IZXA4AOC-Ff7H59M71dslUeSHsK6cJfw6bOE" />
     <title>TurboRepairs - Best Car Garage In West London</title>
 
-    <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="assets/css/LineIcons.2.0.css" r>
+
     <!-- Tiny Slider  -->
     <link rel="stylesheet" type="text/css" href="assets/css/tiny-slider.css">
     <!-- Tailwind css -->
@@ -201,6 +200,40 @@
         -webkit-animation-name: fadeInUp;
         animation-name: fadeInUp;
       }
+
+      /*------------------------
+	base class definition
+-------------------------*/
+      .lni {
+        display: inline-block;
+        font: normal normal normal 1em/1 'LineIcons';
+        speak: none;
+        text-transform: none;
+        /* Better Font Rendering */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .lni-angle-double-left::before {
+        content: "\ea11";
+      }
+      .lni-angle-double-right::before {
+        content: "\ea12";
+      }
+      .lni-envelope::before {
+        content: "\eaab";
+      }
+      .lni-facebook-original::before {
+        content: "\eab4";
+      }
+      .lni-instagram-original::before {
+        content: "\eaf2";
+      }
+      .lni-map-marker::before {
+        content: "\eb1c";
+      }
+      .lni-phone-set::before {
+        content: "\eb4a";
+      }
     </style>
 
     <!-- Animate -->
@@ -208,6 +241,12 @@
     <link rel="preload" href="assets/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
       <link rel="stylesheet" href="assets/css/animate.css">
+    </noscript>
+    <!-- Icon -->
+<!--    <link rel="stylesheet" type="text/css" href="assets/css/LineIcons.2.0.css" r>-->
+    <link rel="preload" href="assets/css/LineIcons.2.0.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
     </noscript>
   </head>
   <body>

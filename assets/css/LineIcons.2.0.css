@@ -12,18 +12,7 @@ Author: lineicons.com
   font-weight: normal;
   font-style: normal;
 }
-/*------------------------
-	base class definition
--------------------------*/
-.lni {
-  display: inline-block;
-  font: normal normal normal 1em/1 'LineIcons';
-  speak: none;
-  text-transform: none;
-  /* Better Font Rendering */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 /*------------------------
   change icon size
 -------------------------*/
@@ -213,14 +202,6 @@ Author: lineicons.com
 
 .lni-angle-double-down::before {
   content: "\ea10";
-}
-
-.lni-angle-double-left::before {
-  content: "\ea11";
-}
-
-.lni-angle-double-right::before {
-  content: "\ea12";
 }
 
 .lni-angle-double-up::before {
@@ -831,10 +812,6 @@ Author: lineicons.com
   content: "\eaaa";
 }
 
-.lni-envelope::before {
-  content: "\eaab";
-}
-
 .lni-eraser::before {
   content: "\eaac";
 }
@@ -865,10 +842,6 @@ Author: lineicons.com
 
 .lni-facebook-messenger::before {
   content: "\eab3";
-}
-
-.lni-facebook-original::before {
-  content: "\eab4";
 }
 
 .lni-facebook-oval::before {
@@ -1115,10 +1088,6 @@ Author: lineicons.com
   content: "\eaf1";
 }
 
-.lni-instagram-original::before {
-  content: "\eaf2";
-}
-
 .lni-instagram::before {
   content: "\eaf3";
 }
@@ -1281,10 +1250,6 @@ Author: lineicons.com
 
 .lni-mailchimp::before {
   content: "\eb1b";
-}
-
-.lni-map-marker::before {
-  content: "\eb1c";
 }
 
 .lni-map::before {
@@ -1465,10 +1430,6 @@ Author: lineicons.com
 
 .lni-patreon::before {
   content: "\eb49";
-}
-
-.lni-phone-set::before {
-  content: "\eb4a";
 }
 
 .lni-phone::before {
