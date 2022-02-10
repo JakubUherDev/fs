@@ -5,12 +5,12 @@
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
 				$name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $number = filter_var(trim($_POST["contact-number"]), FILTER_SANITIZE_EMAIL);
         $subject = filter_var(trim($_POST["subject"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($message) OR empty($subject) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if ( empty($name) OR empty($message) OR empty($subject) OR !filter_var($number, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Please complete the form and try again.";
@@ -25,12 +25,12 @@
 
         // Build the email content.
         $email_content = "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
+        $email_content .= "Contact Number: $number\n\n";
         $email_content .= "Subject: $subject\n\n";
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
-        $email_headers = "From: $name <$email>";
+        $email_headers = "From: $name <$number>";
 
         // Send the email.
         if (mail($recipient, $email_content, $email_headers)) {
